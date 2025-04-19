@@ -24,8 +24,23 @@ import { useToast } from '@/hooks/useToast';
 const eventValidation = z.object({
     title: z.string().min(1, { message: "Title is required" }),
     description: z.string().min(1, { message: "Description is required" }),
-    date: z.string().min(1, { message: "Date is required" }),
-    time: z.string().min(1, { message: "Time is required" }),
+    date: z.string()
+        .min(1, { message: "Date is required" })
+        .refine((date) => {
+            const selectedDate = new Date(date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            return selectedDate >= today;
+        }, { message: "Date cannot be in the past" }),
+    time: z.string()
+        .min(1, { message: "Time is required" })
+        .refine((time) => {
+            const [hours, minutes] = time.split(':').map(Number);
+            const now = new Date();
+            const selectedTime = new Date();
+            selectedTime.setHours(hours, minutes, 0, 0);
+            return selectedTime >= now;
+        }, { message: "Time cannot be in the past" }),
     location: z.string().min(1, { message: "Location is required" }),
     category: z.string().min(1, { message: "Category is required" }),
     imageUrl: z.string().min(1, { message: "Image URL is required" }),

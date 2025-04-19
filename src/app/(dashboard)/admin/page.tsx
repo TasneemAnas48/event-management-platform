@@ -10,8 +10,11 @@ import RSearchInput from '@/components/RComponents/RSearchInput';
 import RFlex from '@/components/RComponents/RFlex';
 import { deleteEventAction, searchEventsAction } from '@/store/slices/eventsSlice';
 import { useDispatch } from 'react-redux';
-import EventForm from '@/components/features/admin/EventForm';
-import EventsTable from '@/components/features/admin/EventsTable';
+import dynamic from 'next/dynamic';
+
+
+const EventsTable = dynamic(() => import('@/components/features/admin/EventsTable'));
+const EventForm = dynamic(() => import('@/components/features/admin/EventForm'));
 
 export default function AdminDashboard() {
   const events = useSelector((state: RootState) => state.events.events);

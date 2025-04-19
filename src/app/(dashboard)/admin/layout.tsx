@@ -31,13 +31,13 @@ export default function RootLayout({
             <body>
                 <Providers>
                     <AuthGuard>
-                        <Suspense fallback={<RLoader />}>
+                        {/* <Suspense fallback={<RLoader />}> */}
                             <RProgressBar />
                             <div className="z-[1]">
                                 <RNavbar />
                                 {children}
                             </div>
-                        </Suspense>
+                        {/* </Suspense> */}
                     </AuthGuard>
                 </Providers>
             </body>
