@@ -2,7 +2,7 @@
 
 A Next.js-based event management platform that allows users to browse and manage events.
 
-🔗 [Live Demo](https://event-management-platform-jj5s9fn3f-tasneem-anas-projects.vercel.app/)
+🔗 [Live Demo](https://event-management-platform-umber.vercel.app/)
 
 ## Author
 
