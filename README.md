@@ -48,6 +48,9 @@ A Next.js-based event management platform that allows users to browse, register 
 
 - Use mock data for database
 
+## Scaling Considerations
+
+
 ### 1. Performance
 - Use CDN for static assets and images
 - Implement infinite scroll for large datasets
