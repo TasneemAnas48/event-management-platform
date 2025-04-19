@@ -35,7 +35,7 @@ A Next.js-based event management platform that allows users to browse, register 
 ### 2. State Management
 
 - Redux for global state (auth, events, bookmarks, register)
-- React Query for server state management (events for website)
+- React Query for caching (fetching events for website)
 - Local storage for persistent data (bookmarks, registrations)
 
 ### 3. Component Architecture
