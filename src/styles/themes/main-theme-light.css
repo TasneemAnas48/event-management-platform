@@ -1,0 +1,39 @@
+html {
+  --background: 0 0% 100%; /* #FFFFFF */
+  --foreground: 0 0% 0%; /* #000 */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 0 0% 13%; /* #212121 */
+  --popover: 0 0% 96%; /* #FAFAFA */
+  --popover-foreground: 0 0% 13%; /* #212121 */
+  --primary: 269, 52%, 47%; /* #763AB6 */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF */
+  --secondary: 338, 79%, 65%; /* #EC5F93 */
+  --secondary-foreground: 269, 52%, 47%; /* #763AB6 */
+  --muted: 338, 71%, 88%; /* #F6CADA */
+  --muted-foreground: 269deg 52% 47% / 80%; /* #763AB6 */
+  --accent: 0 0% 96%; /* #F5F5F5 */
+  --accent-foreground: 269, 52%, 47%; /* #763AB6 */
+  --destructive: 338, 79%, 65%; /* #EC5F93 */
+  --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+  --border: 0 0% 60%; /* #999999 */
+  --input: 0, 0%, 95%; /* #F2F2F2 */
+  --ring: 0, 0%, 90%; /* #656565 */
+  --radius: 0.5rem;
+  --chart-1: 220 70% 50%; /* #3366CC */
+  --chart-2: 160 60% 45%; /* #33CC99 */
+  --chart-3: 30 80% 55%; /* #FFC466 */
+  --chart-4: 280 65% 60%; /* #CC66FF */
+  --chart-5: 338, 79%, 65%; /* #EC5F93 */
+  --sidebar-background: 0 0% 96%;
+  --sidebar-foreground: 0 0% 13%; /* #212121 */
+  --sidebar-primary: 224.3 76.3% 48%; /* #1A73E8 */
+  --sidebar-primary-foreground: 0 0% 100%; /* #FFFFFF */
+  --sidebar-accent: 269, 52%, 47%; /* #763AB6 */
+  --sidebar-accent-foreground: 0 0% 100%; /* #FFFFFF */
+  --sidebar-border: 269, 52%, 47%; /* #763AB6 */
+  --sidebar-ring: 0 0% 0%; /* #000000 */
+  --scroll-bar: 250 9% 30%; /* #4D4D4D */
+  --scroll-bar-hover: 250 9% 60%; /* #999999 */
+  --swiper-navigation-color: 0 0% 0%; /* #000000 */
+  --swiper-navigation-size: 18px;
+}
