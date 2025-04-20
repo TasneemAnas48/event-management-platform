@@ -8,22 +8,6 @@ A Next.js-based event management platform that allows users to browse and manage
 
 [Tasneem Anas](https://www.linkedin.com/in/tasneem-anas/)
 
-## Rendering Strategies
-
-### Client-Side Rendering (CSR)
-
-- `/login` - Uses CSR for dynamic form handling and real-time validation
-
-### Server-Side Rendering (SSR)
-
-- `/` (Homepage) - Uses SSR for initial event listing and SEO optimization
-- `/event/[id]` - Uses SSR for event details to improve SEO and initial load performance
-
-### Hybrid Approach
-
-- `/my-events` - Combines SSR for initial data fetch with CSR for dynamic updates
-- `/admin` - Uses SSR for initial data load with CSR for real-time updates
-
 ## Architectural Decisions
 
 ### 1. Route Groups
